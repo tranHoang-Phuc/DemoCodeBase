@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
 @SpringBootApplication(scanBasePackages = {"fptu.sep490.sample", "fptu.sep490.commonlibrary"})
+@EnableConfigurationProperties({CorsConfig.class})
 public class SampleApplication {
 
     public static void main(String[] args) {
